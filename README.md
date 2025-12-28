@@ -1,5 +1,5 @@
 # F1-Steering-Display-Control-System
-Developing Steering Display Control System for F1 is part of my Electronics System Design project. The goal of project emphasized in developing system with strict budget of €100, the group was divided into project management, Hardware, Firmware and GUI development. I personally took care of firmware part. This is project is a success in all counts.
+Developing Steering Display Control System for F1 is part of my Electronics System Design project. The goal of project emphasized in developing system with strict budget of €100, the group was divided into project management, Hardware, Firmware and GUI development. I personally took care of firmware part. This is project is a success in all counts. Report and code attached for reference.
 ## Overview
 This project implements a custom **Steering Wheel Display Electronic Control Unit (ECU)**
 for Formula1.  
