@@ -1,8 +1,8 @@
 # F1-Steering-Display-Control-System
 Developing Steering Display Control System for F1 is part of my Electronics System Design project. The goal of project emphasized in developing system with strict budget of €100, the group was divided into project management, Hardware, Firmware and GUI development. I personally took care of firmware part. This is project is a success in all counts.
 ## Overview
-This project implements a custom **Steering Wheel Electronic Control Unit (ECU)**
-for automotive and motorsport-style applications.  
+This project implements a custom **Steering Wheel Display Electronic Control Unit (ECU)**
+for Formula1.  
 The ECU manages driver inputs (buttons, clutch paddle, rotary encoders),
 communicates vehicle data over **CAN bus**, and displays real-time telemetry
 on a **TFT display**.
@@ -15,18 +15,19 @@ hardware–software integration.
 
 ## System Architecture
 - **Input Layer**
-  - Push buttons (gear up/down, DRS, mode selection)
+  - Push buttons (gear up/down, DRS mode selection, Ignition)
   - Analog clutch paddle (ADC-based)
   - Rotary encoder (menu / parameter selection)
 
 - **Processing Layer**
   - STM32 microcontroller
   - Real-time input processing
-  - State-based logic for gear, clutch, and DRS control
+  - State-based logic for gear, clutch, ignition, and DRS control
 
 - **Communication Layer**
   - CAN bus (vehicle network interface)
   - Periodic transmission of steering wheel status frames
+  - Receive Temperature Data and provide error accordingly
 
 - **Output Layer**
   - TFT display (ILI9341)
